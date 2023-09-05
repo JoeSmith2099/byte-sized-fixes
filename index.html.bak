@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Smith CPSC 2125 Portfolio</title>
+  <link href="lab6.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="grid">
+    <header class="header">
+      <h1> Welcome to Practical Asswipes! </h1>
+      <img src="images/rsz_logo.png">
+    </header>
+    <nav class="nav">
+      <ul>
+        <div class="button">
+          <li><a href="lab1.html">Shit About Wiping </a></li>
+        </div>
+        <div class="button">
+          <li><a href="lab2.html">Sitting or Standing </a></li>
+        </div>
+        <div class="button">
+          <li><a href="lab3.html">Booty Banging</a></li>
+        </div>
+        <div class="button">
+          <li><a href="lab4.html">Y'all Are Nasty</a></li>
+        </div>
+        <div class="button">
+          <li><a href="lab5.html">Why We Wipe</a></li>
+        </div>
+        <div class="button">
+          <li><a href="lab6.html">Thank You For Wiping</a></li>
+        </div>
+      </ul>
+    </nav>
+    <main class="main">
+    </main>
+    <footer class="footer">
+      <p>Contact Us:<br><br>Phone - (458)-567-4234<br>Email - billybob@email.com </p>
+      <p>Page Last Modified: <span id="update_date"></span></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
