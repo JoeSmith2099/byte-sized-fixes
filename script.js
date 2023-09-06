@@ -1,39 +1,24 @@
-// request.js
+function makeRequest(name, email, subject, message) {
+  // Create a new XMLHttpRequest object.
+  var xhr = new XMLHttpRequest();
 
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-  // Find the form element by its ID
-  var form = document.getElementById("request-form");
+  // Set the request method and URL.
+  xhr.open("POST", "/request");
 
-  // Add event listener for form submission
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+  // Set the request headers.
+  xhr.setRequestHeader("Content-Type", "application/json");
 
-    // Process the form data
-    var name = form.elements["name"].value;
-    var email = form.elements["email"].value;
-    var subject = form.elements["subject"].value;
-    var message = form.elements["message"].value;
+  // Create a JSON object to send in the request body.
+  var data = {
+    name: name,
+    email: email,
+    subject: subject,
+    message: message,
+  };
 
-    // Create a popup to display the form data
-    var popupMessage = `Form Data:
-      Name: ${name}
-      Email: ${email}
-      Subject: ${subject}
-      Message: ${message}`;
-    alert(popupMessage);
-    
-    // Perform any necessary form validation or data processing here
+  // Send the request.
+  xhr.send(JSON.stringify(data));
+}
 
-    // Example: Log the form data to the console
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Subject:", subject);
-    console.log("Message:", message);
-
-    // You can also send the form data to a server using AJAX or fetch
-
-    // Reset the form fields
-    form.reset();
-  });
-});
+// Example usage.
+makeRequest("John Smith", "john.smith@email.com", "My computer is broken", "Please fix my computer.");
