@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Byte-Sized Fixes</title>
   <style>
   
@@ -59,8 +59,13 @@
       max-width: 800px;
       margin: 0 auto;
     }
-    
+	
+	a {
+	color: white;
+	}
+
   </style>
+  <link rel ="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -68,11 +73,10 @@
  <header>
   <div class="logo">Byte-Sized Fixes</div>
   <nav>
-    <div><a href="home.html">Home</a></div>
-    <div><a href ="about.html">About</a></div>
-    <div><a href="services.html">Services</a></div>
-    <div><a href="https://www.ebay.com/usr/byte_sized_fixes?_trksid=p2047675.m3561.l2559">Store</div>
-    <div><a href ="request.html">Contact</a></div>
+    <div><a href ="about.html" aria-label="Read more about our team">About</a></div>
+    <div><a href="home.html" aria-label="Read about what services we offer">Services</a></div>
+    <div><a href="https://www.ebay.com/usr/byte_sized_fixes?_trksid=p2047675.m3561.l2559" aria-label="Go to our ebay store and see the deals';">Store</div>
+    <div><a href ="request.html" aria-label="Request a personal repair or consultation">Contact</a></div>
   </nav>
 </header>
 

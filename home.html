@@ -1,64 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <title>Byte-Sized Fixes</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <div class="grid">
-    <header class="header">
-      <div style="text-align: center;">
-        <img src="~/MyFiles/Website/logo_prototype.png" width="200" height="200" alt="Company Logo">
-      </div>
-    </header>
-    <nav class="nav">
-      <ul>
-        <li class="button"><a href="services.html">Services</a></li>
-        <li class="button"><a href="about.html">About Us</a></li>
-        <li class="button"><a href="request.html">Request Form</a></li>
-        <li class="button"><a href="https://www.mercari.com/u/670138764/">Mercari Store</a></li>
-        <li class="button"><a href="https://www.ebay.com/usr/byte_sized_fixes?_trksid=p2047675.m3561.l2559">eBay Store</a></li>
+<header>
+  <div class="logo-container">
+     <img src="images/logo_prototype.png" alt="Company Logo" width="150" height="150">
+  </div>
+	<nav class="nav" style="background-color: #333; padding: 10px 0;">
+      <!-- Updated navigation bar style -->
+      <ul style="list-style: none; display: flex; justify-content: center; padding: 0;">
+        <li style="margin: 0 15px;"><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+        <li style="margin: 0 15px;"><a href="request.html" style="color: white; text-decoration: none;">Request Form</a></li>
+		<li style="margin: 0 15px;"><a href="https://www.ebay.com/usr/byte_sized_fixes?_trksid=p2047675.m3561.l2559" style="color: white; text-decoration: none;">Store</a></li>
       </ul>
     </nav>
-    <main class="main">
-      <div style="padding: 20px;">
-        <h2>Welcome to Byte-Sized Fixes</h2>
-        <p>Your dedicated laptop and computer repair experts, committed to delivering high-quality solutions for your technical needs.</p>
-        <h3>Our Services:</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <p>Hardware repair</p>
-            <a href="#"><img src="https://live.staticflickr.com/65535/51080622697_cd1151472d_b.jpg" alt="Hardware Repair"></a>
-          </li>
-          <li class="service-item">
-            <p>Software repair</p>
-            <a href="#"><img src="https://live.staticflickr.com/1923/30504849787_4436833114_b.jpg" alt="Software Repair"></a>
-          </li>
-          <li class="service-item">
-            <p>Data and File Recovery</p>
-            <a href="#"><img src="https://freesvg.org/img/Lost-And-Found.png" alt="Data Recovery"></a>
-          </li>
-          <li class="service-item">
-            <p>Virus removal</p>
-            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Virus_%2815462325023%29.jpg" alt="Virus Removal"></a>
-          </li><br>
-          <li class="service-item">
-            <p>System optimization</p>
-            <a href="#"><img src="https://freesvg.org/img/speedometer3.png" alt="System Optimization"></a>
-          </li>
-        </ul>
-        <p>Looking for laptops or computer parts? Discover our online stores on Mercari and eBay!</p>
-        <p>Contact us today for reliable, professional service that keeps your devices running smoothly.</p>
-      </div>
-    </main>
-    <footer class="footer">
-      <p>Contact Us:<br>Phone - (478)-588-0915<br>Email - joseph.smith.business1412@gmail.com</p>
-      <p>Page Last Modified: <span id="update_date"></span></p>
-    </footer>
-  </div>
-  <script src="script.js"></script>
-</body>
+</header>
+
+ <style>
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header and Logo */
+header {
+  background-color: #333; /* Matches navigation background */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-container img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Subtle shadow for depth */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Service List */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+}
+.service-item img {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.service-item p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.service-item p:hover {
+  color: #0a15f0;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+footer a {
+  color: #ffa500;
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .service-item img {
+    height: 120px;
+  }
+}
+
+</style>
+
+<main>
+  <section>
+    <h2>Welcome to Byte-Sized Fixes</h2>
+    <p>Your dedicated laptop and computer repair experts, committed to delivering high-quality solutions for your technical needs.</p>
+  </section>
+  <section>
+    <h3>Our Services:</h3>
+    <ul class="service-list">
+      <li class="service-item">
+        <img src="images/hardware_repair.jpg" alt="Hardware Repair">
+        <p>We’ll get your laptop or desktop working like new!</p>
+      </li>
+      <li class="service-item">
+        <img src="images/software_repair.jpg" alt="Software Repair">
+        <p>We’ll take care of annoying crashes or errors!</p>
+      </li>
+	  <li class="service-item">
+		<img src="images/Virus.jpg" alt="Virus Removal">
+		<p>Say goodbye to pop-ups and suspicious programs!</p>
+	  </li>
+	  </li>    
+	  <li class="service-item">
+		<img src="images/fast.jpg" alt="Virus Removal">
+		<p>Make your device run faster and smoother!</p>
+	  </li>
+	  <li class="service-item">
+		<img src="images/Lost-And-Found.png" alt="Data Recovery">
+		<p>Get back your important photos, documents, and files...</p>
+	  </li>    
+	</ul>
+  </section>
+</main>
 
 </html>

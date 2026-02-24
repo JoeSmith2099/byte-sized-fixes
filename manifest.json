@@ -1,0 +1,16 @@
+{
+  "name": "Byte-Sized Fixes",
+  "short_name": "BSFixes",
+  "description": "Your Expert Partner in Technology Solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "path/to/logo_prototype.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
