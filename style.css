@@ -115,6 +115,15 @@ img{max-width:100%;height:auto;display:block;border-radius:14px}
 }
 .footer-links a:hover{background:rgba(255,255,255,.06)}
 
+.founder-img {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+}
+
 /* Responsive */
 @media (max-width:980px){
   .grid-2{grid-template-columns:1fr}
