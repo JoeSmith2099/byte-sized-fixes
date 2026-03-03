@@ -117,11 +117,12 @@ img{max-width:100%;height:auto;display:block;border-radius:14px}
 
 .founder-img {
   width: 100%;
-  max-width: 420px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center;
+  max-width: 350px;       /* controls size */
+  height: 350px;          /* forces square */
+  object-fit: cover;      /* crops nicely */
+  object-position: center top; /* adjust crop focus */
   border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
 }
 
 /* Responsive */
